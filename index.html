@@ -12,57 +12,61 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <!-- BANNER -->
     <div id="div-cabecalho">
         <div id="div-logo"><img id="logo" src="midias/logo.png" alt="Logo"></div>
         <div id="div-titulo">
-            <p>Se inscreva e ganhe um cursinho preparatório para o ENEM 2022! </p>
-            <p style="font-size: 3vw;">Concorra também a premiações!</p>
+            <h1>Se inscreva e ganhe um cursinho preparatório para o ENEM 2022! </h1>
+            <p>Concorra também a premiações!</p>
         </div>
-        <img id="banner" src="midias/background.png" alt="background">
     </div>
+
+    <!-- INFORMAÇÕES SOBRE -->
+    <div id="infos">
+        <h2>Como funciona??</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorem nostrum doloribus alias vitae repellat optio? Dicta commodi blanditiis explicabo veritatis eius et, harum voluptas fugiat eligendi dolores doloremque saepe! </p>
+
+
+    </div>
+
+    <!-- FORMULÁRIO -->
     <div id="formulario">
-        <form>
-            <h1>Cadastre-se!</h1>
+        <form action="envia_fale.php" method="post" name="form">
+            <h2>Cadastre-se!</h2>
             <fieldset class="grupo">
-                <h2>Informações pessoais:</h2>
                 <div class="divcampo">
                     <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome" required>
+                    <input placeholder="João da Silva" type="text" name="nome" id="nome" required>
                 </div>
 
                 <div class="divcampo">
                     <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required>
+                    <input placeholder="email@dominio.com" type="email" name="email" id="email" required>
                 </div>
 
                 <div class="divcampo">
                     <label for="telefone"><strong>Telefone:</strong></label>
-                    <input placeholder="(xx)xxxxx-xxxx" type="tel" name="telefone" id="telefone" required>
+                    <input placeholder="(99) 99999-9999" type="tel" name="telefone" id="telefone" required>
                 </div>
-
             </fieldset>
 
             <fieldset class="grupo">
-                <form>
-                    <h2>Informações sobre seu polo:</h2>
-
-                    <div class="divcampo">
-                        <label for="cidade">Cidade</label>
-                        <input id="cidade" type="text" required/>
-                    </div>
-
-
-                    <div class="divcampo">
-                        <label for="bairro">Bairro</label>
-                        <input id="bairro" type="text" required/>
-                    </div>
-
-                    <div class="divcampo">
-                        <label for="uf">Estado</label>
-                        <select id="uf">
+                <h2>Informações sobre seu polo</h2>
+                <div class="divcampo">
+                    <label for="escola">Escola</label>
+                    <input id="escola" type="text" required/>
+                </div>
+                <div class="divcampo">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" required/>
+                </div>
+                <div class="divcampo">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" required/>
+                </div>
+                <div class="divcampo">
+                    <label for="uf">Estado</label>
+                    <select id="uf">
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
                             <option value="AP">Amapá</option>
@@ -91,12 +95,19 @@
                             <option value="SE">Sergipe</option>
                             <option value="TO">Tocantins</option>
                         </select>
-                    </div>
+                </div>
+                <!-- MODAL -->
+                <div style="display: flex; align-items: center;">
+                    <input type="checkbox" name="termo" id="termo">
+                    <label for="termo">Li e aceito com os termos</label>
+                </div>
             </fieldset>
-            <button type="button" class="btn btn-outline-light btn-lg form-control">Enviar</button>
-            </form>
+            <!-- BOTÃO -->
+            <div style="text-align: center;"><button type="submit" name="submit" value="submit">Enviar</button></div>
+        </form>
     </div>
 
+    <!-- RODAPÉ -->
     <footer>
         <div>
             <p> Todos direitos reservados a ©</p>
@@ -105,7 +116,11 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <!-- <script src="//code.jivosite.com/widget/qgKa883uNJ " async></script> -->
+    <script src="script.js"></script>
+    <script src="envia_fale.php"></script>
+
 </body>
 
 </html>
