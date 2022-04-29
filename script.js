@@ -1,9 +1,8 @@
-function fecharModal() {
-    document.getElementById('fundo').style.display = 'none';
-    document.getElementById('modal').style.display = 'none';
-}
+function sendMail() {
+    var link = "mailto:me@example.com" +
+        "?cc=myCCaddress@example.com" +
+        "&subject=" + escape("This is my subject") +
+        "&body=" + escape(document.getElementById('myText').value);
 
-function abrirModal() {
-    document.getElementById('fundo').style.display = 'block';
-    document.getElementById('modal').style.display = 'block';
+    window.location.href = link;
 }
