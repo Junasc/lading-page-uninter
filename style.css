@@ -21,11 +21,13 @@ html {
 
 #menu {
     width: auto;
+    text-align: center;
     height: 80px;
     background-image: linear-gradient(to right, #387eac, #091c5e);
 }
 
 #menu ul {
+    text-transform: uppercase;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -64,10 +66,10 @@ a:hover {
 }
 
 #div-titulo h1 {
-    color: #efca37;
+    color: rgb(239, 230, 230);
     padding: 10px;
     line-height: 1.2em;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.703);
+    text-shadow: 2px 2px 0px rgb(255, 0, 200);
     font-family: 'bungee';
     font-size: 1.5em;
 }
@@ -95,16 +97,16 @@ a:hover {
 #infos {
     padding: 25px;
     background-image: linear-gradient(to right, #9B65F0, #438CDF, #003168);
-    width: auto;
-    height: 65vh;
     text-align: center;
     color: white;
 }
 
 #infos>p {
-    padding: 20px;
+    padding: 10px;
     font-size: 1.5em;
-    text-align: centerz;
+    text-align: center;
+    margin: auto;
+    width: 85%;
 }
 
 #img-podio {
@@ -114,7 +116,7 @@ a:hover {
 #formulario {
     padding-top: 25px;
     width: auto;
-    height: 800px;
+    height: 900px;
     color: white;
     display: flex;
     justify-content: center;
@@ -205,9 +207,9 @@ h2 {
     background-color: #fefefe;
     margin: auto;
     padding: 30px;
+    margin-bottom: 200px;
     border: 1px solid #888;
     width: 80%;
-    height: auto;
 }
 
 .close {
@@ -233,10 +235,9 @@ h2 {
 }
 
 footer {
-    padding: 10px 0px;
-    width: 100%;
-    height: 8vh;
-    background-color: #438CDF;
+    padding: 10px;
+    height: 5vh;
+    background-color: #61a6f5;
     color: white;
     text-align: center;
 }
