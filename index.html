@@ -71,7 +71,6 @@
                 </div>
             </fieldset>
             <fieldset class="grupo">
-                <h2 class="titles">Informações sobre seu polo</h2>
                 <div class="divcampo">
                     <label for="escola">Escola</label>
                     <input name="escola" maxlength="50" id="escola" type="text" required/>
@@ -118,7 +117,7 @@
                 </div>
                 <!-- MODAL -->
                 <div style="display: flex; align-items: center; padding: 15px;">
-                    <input type="checkbox" name="termo" id="termo" required>
+                    <input type="checkbox" name="termo" class="termo" id="termo" required>
                     <label id="myBtn">Li e aceito com os termos</label>
                 </div>
                 <div id="myModal" class="modal">
@@ -201,23 +200,26 @@
                         <p>O site uninter empregará esforços para resguardar as informações e dados coletados do usuário pelo site. Todavia, considerando que não há meio de transmissão e retenção de dados eletrônicos plenamente eficaz e seguro, o site uninter
                             não pode assegurar que terceiros não autorizados não logrem êxito no acesso indevido, eximindo-se de qualquer responsabilidade por danos e prejuízos decorrentes da conduta de terceiros, ataques externos ao site como: vírus,
                             invasão ao banco de dados, vícios ou defeitos técnicos, assim como operacionais resultante da utilização do site e em razão de falhas de conexão.</p>
+                        <div style="display: flex; align-items: center; padding: 15px;">
+                            <input type="checkbox" name="termo" class="termo" id="termo-modal" required>
+                            <label id="myBtn" for="termo-modal">Li e aceito com os termos</label>
+                        </div>
                     </div>
-                </div>
             </fieldset>
             <!-- BOTÃO -->
             <div style="text-align: center;"><button type="submit" name="submit" value="submit">Enviar</button></div>
         </form>
-    </div>
-    <!-- RODAPÉ -->
-    <footer>
-        <div id="copy">
-            <p> UNINTER © 2022</p>
-            <p>Criado por <a id="juliana" target="_blank" href="https://www.linkedin.com/in/juliana-nascimento18">Juliana Nascimento</a>🖖</p>
         </div>
+        <!-- RODAPÉ -->
+        <footer>
+            <div id="copy">
+                <p> UNINTER © 2022</p>
+                <p>Criado por <a id="juliana" target="_blank" href="https://www.linkedin.com/in/juliana-nascimento18">Juliana Nascimento</a>🖖</p>
+            </div>
 
-    </footer>
-    <!-- SCRIPTS -->
-    <script src="//code.jivosite.com/widget/qgKa883uNJ " async></script>
-    <script src="script.js"></script>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="//code.jivosite.com/widget/qgKa883uNJ " async></script>
+        <script src="script.js"></script>
 
 </html>

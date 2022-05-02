@@ -98,8 +98,6 @@ a:hover {
     color: white;
 }
 
-#img-premios image {}
-
 #infos>p {
     padding: 10px;
     font-size: 1.5em;
@@ -167,7 +165,7 @@ input:focus {
     font-size: 1em;
 }
 
-#termo {
+.termo {
     width: 30px;
     height: 20px;
     box-shadow: none;
@@ -232,6 +230,10 @@ h2 {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+#myModal {
+    transition: 0.5s;
 }
 
 #myBtn {

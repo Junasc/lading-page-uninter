@@ -23,3 +23,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+var termoModal = document.getElementById("termo-modal")
+termoModal.onclick = function() {
+    var termo = document.getElementById("termo")
+    if (!termo.checked) {
+        termo.click()
+    }
+    setTimeout(() => span.click(), 200)
+}
