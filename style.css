@@ -106,10 +106,6 @@ a:hover {
     width: 85%;
 }
 
-#img-podio {
-    width: 150px;
-}
-
 #formulario {
     border-top: rgb(255, 255, 255) 3px solid;
     padding-top: 25px;
@@ -142,7 +138,15 @@ label {
 }
 
 #img-premios {
-    padding: 20px;
+    padding-top: 50px;
+}
+
+#premio-polo {
+    padding-top: 100px;
+}
+
+#premio-nacional {
+    padding-top: 20px;
 }
 
 input {
@@ -290,9 +294,6 @@ footer {
     }
     a {
         font-size: 1em;
-    }
-    #img-premios {
-        padding: 15px;
     }
     #premio-polo {
         width: 300px;
