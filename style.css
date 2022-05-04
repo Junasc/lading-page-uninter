@@ -14,48 +14,19 @@ html {
     scroll-behavior: smooth;
 }
 
-#menu {
-    width: auto;
-    text-align: center;
-    height: 80px;
-    background-image: linear-gradient(to right, #387eac, #091c5e);
-}
-
-#menu ul {
-    text-transform: uppercase;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-a {
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-a:hover {
-    transition: 0.3s;
-    color: rgb(255 209 21);
-}
-
 #banner {
     width: 100%;
     height: 100%;
 }
 
 #div-logo {
-    padding-top: 5%;
+    text-align: center;
 }
 
 #div-cabecalho {
     padding-bottom: 30px;
     background-image: url(midias/background.png);
     background-size: cover;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -78,6 +49,10 @@ a:hover {
     color: #ffcb04;
 }
 
+a:hover {
+    color: rgb(164, 164, 255);
+}
+
 .titles {
     font-weight: bolder;
     padding: 15px;
@@ -91,9 +66,14 @@ a:hover {
     text-align: center;
 }
 
+#body {
+    display: flex;
+}
+
 #infos {
+    width: 50%;
     padding: 25px;
-    background: linear-gradient(to right, #9B65F0, #438CDF, #003168);
+    background-image: url(midias/bg-infos.png);
     text-align: center;
     color: white;
 }
@@ -107,14 +87,15 @@ a:hover {
 }
 
 #formulario {
-    border-top: rgb(255, 255, 255) 3px solid;
-    padding-top: 25px;
-    width: auto;
-    height: 900px;
+    width: 50%;
     color: white;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, #9B65F0, #438CDF, #003168);
+    background-image: url(midias/bg-form.png);
+    background-position: 30% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #003169;
 }
 
 select {
@@ -122,12 +103,9 @@ select {
 }
 
 form {
-    border-radius: 25px;
+    padding: 20%;
     display: block;
-    width: 40vw;
-    height: 600px;
     text-align: left;
-    padding: 20px;
 }
 
 label {
@@ -138,21 +116,32 @@ label {
 }
 
 #img-premios {
-    padding-top: 50px;
+    font-size: 1.2em;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #premio-polo {
-    padding-top: 100px;
+    text-align: center;
+    padding: 25px;
 }
 
 #premio-nacional {
-    padding-top: 20px;
+    text-align: center;
+    padding: 25px;
+}
+
+#img-premios p {
+    color: #ffcb04;
+    text-align: center;
 }
 
 input {
     background-color: #EEE;
     padding: 10px;
-    width: 95%;
+    width: 90%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     border: 0;
     border-radius: 3px;
@@ -240,12 +229,14 @@ h2 {
     transition: 0.5s;
 }
 
-#myBtn {
+#myBtn,
+#myBtn2 {
     cursor: pointer;
 }
 
-#myBtn:hover {
-    color: blue;
+#myBtn:hover,
+#myBtn2:hover {
+    color: rgb(238, 255, 46);
 }
 
 #juliana {
@@ -269,9 +260,6 @@ footer {
 }
 
 @media screen and (max-width: 890px) {
-    #div-cabecalho {
-        flex-direction: column;
-    }
     #logo {
         width: 100%;
     }
@@ -280,11 +268,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
-    form {
-        margin: 0;
-        width: 50vh;
-        height: 100vh;
+@media screen and (max-width: 710px) {
+    #formulario {
+        background-image: url(midias/bg-infos-mobile1.png);
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
     }
     #div-titulo h1 {
         font-size: 0.9em;
@@ -292,13 +280,31 @@ footer {
     #infos p {
         font-size: 1em;
     }
-    a {
-        font-size: 1em;
-    }
     #premio-polo {
         width: 300px;
+        margin: auto;
     }
     #premio-nacional {
         width: 250px;
+        margin: auto;
+    }
+    #body {
+        display: block;
+    }
+    #formulario {
+        width: auto;
+    }
+    #infos {
+        width: auto;
+    }
+    #img-premios {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 690px) and (max-width: 1320px) {
+    #formulario {
+        background-image: none;
+        background-color: #003169;
     }
 }
