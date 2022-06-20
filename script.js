@@ -42,18 +42,14 @@ window.onclick = function(event) {
 var termoModal = document.getElementById("termo-modal")
 termoModal.onclick = function() {
     var termo = document.getElementById("termo")
-    if (!termo.checked) {
-        termo.click()
-    }
+    termo.checked = termoModal.checked;
     setTimeout(() => span.click(), 200)
 }
 
 var termoModal2 = document.getElementById("termo-modal2")
 termoModal2.onclick = function() {
     var termo2 = document.getElementById("termo2")
-    if (!termo2.checked) {
-        termo2.click()
-    }
+    termo2.checked = termoModal2.checked;
     setTimeout(() => span2.click(), 200)
 }
 
@@ -72,4 +68,16 @@ checkIdade.onclick = function() {
         cpfDiv.style.display = 'block';
         cpf.disabled = false;
     }
+}
+
+var termo = document.getElementById("termo")
+termo.onclick = function() {
+    var termoModal = document.getElementById("termo-modal")
+    termoModal.checked = termo.checked;
+}
+
+var termo2 = document.getElementById("termo2")
+termo2.onclick = function() {
+    var termoModal2 = document.getElementById("termo-modal2")
+    termoModal2.checked = termo2.checked;
 }
