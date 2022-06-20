@@ -56,3 +56,20 @@ termoModal2.onclick = function() {
     }
     setTimeout(() => span2.click(), 200)
 }
+
+
+var checkIdade = document.getElementById("checkIdade");
+checkIdade.onclick = function() {
+    var cpf = document.getElementById("cpfRes");
+    var cpfDiv = document.getElementById("cpfDiv");
+
+    if (checkIdade.checked) {
+        cpf.required = false;
+        cpfDiv.style.display = 'none';
+        cpf.disabled = true;
+    } else {
+        cpf.required = true;
+        cpfDiv.style.display = 'block';
+        cpf.disabled = false;
+    }
+}
