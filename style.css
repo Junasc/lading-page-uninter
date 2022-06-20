@@ -141,12 +141,12 @@ label {
 
 #premio-polo {
     text-align: center;
-    padding: 25px;
+    padding: 20px;
 }
 
 #premio-nacional {
     text-align: center;
-    padding: 25px;
+    padding: 20px;
 }
 
 #img-premios p {
@@ -390,7 +390,7 @@ footer {
         font-size: 1em;
     }
     #premio-polo {
-        width: 250px;
+        width: 200px;
         margin: auto;
     }
     #premio-nacional {
@@ -421,5 +421,13 @@ footer {
 @media screen and (max-width: 580px) {
     #formulario {
         background-image: none;
+    }
+    #premio-polo>img {
+        width: 200px;
+        margin: auto;
+    }
+    #premio-nacional>img {
+        width: 200px;
+        margin: auto;
     }
 }
