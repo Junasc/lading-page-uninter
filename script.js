@@ -58,18 +58,26 @@ var checkIdade = document.getElementById("checkIdade");
 checkIdade.onclick = function() {
     var cpf = document.getElementById("cpfRes");
     var cpfDiv = document.getElementById("cpfDiv");
+    var nome = document.getElementById("nomeResp");
+    var nomeDiv = document.getElementById("nomeRespDiv");
 
     if (checkIdade.checked) {
         cpf.required = false;
         cpfDiv.style.display = 'none';
+        nome.required = false;
+        nomeDiv.style.display = 'none';
+        nome.disabled = true;
+
         cpf.disabled = true;
     } else {
         cpf.required = true;
         cpfDiv.style.display = 'block';
         cpf.disabled = false;
+        nome.required = true;
+        nomeDiv.style.display = 'block';
+        nome.disabled = false;
     }
 }
-
 var termo = document.getElementById("termo")
 termo.onclick = function() {
     var termoModal = document.getElementById("termo-modal")
