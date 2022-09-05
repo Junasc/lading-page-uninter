@@ -3,12 +3,11 @@
 
 
 ## 🎯 Objetivo
-Página criada para realizar inscrições de estudantes que pretendem realizar o enem 2022.
+Página criada para realizar inscrições de estudantes que pretendem realizar o enem 2022.(Inscrições encerradas) 
 
 
 ## 👨‍🏫 Exemplo de uso
-Acesse em ➡️ https://gameuninter.netlify.app/
-
+https://www.linkedin.com/posts/juliana-nascimento18_uninter-activity-6944729613784784896-9H02?utm_source=share&utm_medium=member_desktop
 
 ## 👨🏼‍💻 Autor
 
